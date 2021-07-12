@@ -32,13 +32,13 @@ class Calculator
                     $this->cssNodes[$nodes],
                     '',
                     $i,
-                    round($this->getCalculationByType($i, $baseSize, $calculateTo) ,4) . $calculateTo);
+                    round($this->getCalculationByType($i, $baseSize, $calculateTo), 4) . $calculateTo);
                 for ($orientation = 0; $orientation < count($this->cssOrientation); $orientation++) {
                     $this->cssString .= $this->buildCssClass(
                         $this->cssNodes[$nodes],
                         $this->cssOrientation[$orientation],
                         $i,
-                        round($this->getCalculationByType($i, $baseSize, $calculateTo) ,4) . $calculateTo);
+                        round($this->getCalculationByType($i, $baseSize, $calculateTo), 4) . $calculateTo);
                 }
             }
 
